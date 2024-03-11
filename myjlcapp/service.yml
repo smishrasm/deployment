@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: myjlcapp
-  type: LoadBalancer  
+  type: NodePort  
   ports:
   - port: 12345
     protocol: TCP
