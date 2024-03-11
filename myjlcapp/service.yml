@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: myjlcapp
+spec:
+  selector:
+    app: myjlcapp
+  type: LoadBalancer  
+  ports:
+  - port: 12345
+    protocol: TCP
+    targetPort: 12345

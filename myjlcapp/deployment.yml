@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: myjlcapp
+  name: myjlcapp
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: myjlcapp
+  template:
+    metadata:
+      labels:
+        app: myjlcapp
+    spec:
+      containers:
+      - name: myjlcapp
+        image: http://192.168.25.200/harbor/projects/3/repositories/bookstore-maven/1.0-SNAPSHOT
+        imagePullPolicy: Always
