@@ -17,5 +17,5 @@ spec:
     spec:
       containers:
       - name: myjlcapp
-        image: http://192.168.25.200/harbor/projects/3/repositories/bookstore-maven/1.0-SNAPSHOT
+        image: 192.168.25.200:80/javaproject/bookstore-maven:1.0-SNAPSHOT
         imagePullPolicy: Always
