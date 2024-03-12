@@ -4,6 +4,7 @@ metadata:
   labels:
     app: myjlcapp
   name: myjlcapp
+  namespace: default
 spec:
   replicas: 5
   selector:
